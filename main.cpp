@@ -4,8 +4,9 @@
 using namespace std;// проверка, чтобы строка состояла только из прописных букв
 bool isValid(const wstring& s)
 {
-    for(auto c:s)        if (!iswalpha(c) || !iswupper(c)) return true;
-    return false;
+    for(auto c:s)        if (!iswalpha(c) || !iswupper(c)) return false;
+    return true;
+    
     
 }
 int main(int argc, char **argv)
